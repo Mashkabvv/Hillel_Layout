@@ -1,0 +1,32 @@
+.footer {
+    height: 65px;
+    box-sizing: border-box;
+    background: #f5e8f4;
+    border: 1px solid #e2d6e1;
+    line-height: 65px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        text-align: center;
+    }
+}
+
+#sizeBrowser {
+    padding-left: 20px;
+    width: 100px;
+    height: 65px;
+    font-size: 14px;
+    color: #888788;
+}
+
+#timer {
+    width: 100px;
+    height: 65px;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #888788;
+}

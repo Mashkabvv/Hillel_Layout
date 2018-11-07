@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hillel_Layout</title>
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <label class="header__burger" for="checkbox">&#9776;</label>
+        <div class="header__logo"><p>:)))))))</p></div>      
+            <!-- <ul class="header__nav">
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Link1</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Link2</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Link3</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Link4</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Link5</a>
+                </li>                     
+            </ul> -->
+            <div id="clock" class="header__date-wrap">
+                <span id="hours"></span>:
+                <span id="minutes"></span>:
+                <span id="seconds"></span>
+            </div>
+    </header>
+    <div class="wrapper">
+        <input type="checkbox" id="checkbox" class="header__checkbox">
+        <aside class="aside">
+            <ul class="aside__nav">
+                <li class="aside__nav-item">
+                    <a href="#" class="aside__nav-link aside__nav-table">Create Table</a>
+                </li>
+                <li class="aside__nav-item">
+                    <a href="#" class="aside__nav-link aside__nav-slider">Slider</a>
+                </li>
+                <li class="aside__nav-item">
+                    <a href="#" class="aside__nav-link">Link3</a>
+                </li>
+                <li class="aside__nav-item">
+                    <a href="#" class="aside__nav-link">Link4</a>
+                </li>
+                <li class="aside__nav-item">
+                    <a href="#" class="aside__nav-link">Link5</a>
+                </li>
+            </ul>
+            <p>Еще что-то...</p>
+        </aside>
+        <article class="article">
+            <p class="article__text">Здесь что-то будет...</p>
+            <!-- <div class="article__table-container"> -->
+            <div class="article__form-table">
+                <label for="inputRow">Row</label>
+                <input type="text" id="inputRow" class="article__input">
+                <label for="inputColumn">Column</label>
+                <input type="text" id="inputColumn" class="article__input">
+                <button type="button" class="article__button">Create table</button>
+            </div>
+            <div class="article__table-wrap"></div>
+            <!-- </div> -->
+            
+            <div class="article__slider">
+                <img src="images/slider/Baikal1.jpg" class="article__slider-img showed" alt="Photo-Baikal">
+                <img src="images/slider/Baikal2.jpg" class="article__slider-img" alt="Photo-Baikal">
+                <img src="images/slider/Baikal3.jpg" class="article__slider-img" alt="Photo-Baikal">
+                <img src="images/slider/Baikal4.jpg" class="article__slider-img" alt="Photo-Baikal">
+            </div>
+        </article>
+    </div>
+    <footer class="footer">
+        <div id="sizeBrowser"></div>
+        <div id="timer"></div>
+        <!-- <p>Временный параграф:)</p> -->
+    </footer>
+</body>
+<script src="script/table.js"></script>
+<script src="script/clock.js"></script>
+<script src="script/resize.js"></script>
+<script src="script/timer.js"></script>
+<script src="script/slider.js"></script>
+</html>
