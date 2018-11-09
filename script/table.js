@@ -15,7 +15,7 @@ function showFormTable() {
     formTable.style.display = `block`;
     parentTable.style.display = `block`;
     articleText.style.display = `none`;
-    slider.style.display = `none`;
+    sliderWrap.style.display = `none`;
 }
 
 function createTable() {
