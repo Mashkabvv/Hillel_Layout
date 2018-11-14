@@ -24,44 +24,79 @@
         <aside class="aside">
             <ul class="aside__nav">
                 <li class="aside__nav-item">
-                    <a href="#" class="aside__nav-link aside__nav-table">Create Table</a>
+                    <a href="#" class="aside__nav-link" data-tab = "1" id="table">Create Table</a>
                 </li>
                 <li class="aside__nav-item">
-                    <a href="#" class="aside__nav-link aside__nav-slider">Slider</a>
+                    <a href="#" class="aside__nav-link" data-tab = "2" id="slider">Slider</a>
                 </li>
                 <li class="aside__nav-item">
-                    <a href="#" class="aside__nav-link">Link3</a>
+                    <a href="#" class="aside__nav-link" data-tab = "3" id="slider1">Slider1</a>
                 </li>
                 <li class="aside__nav-item">
-                    <a href="#" class="aside__nav-link">Link4</a>
+                    <a href="#" class="aside__nav-link" data-tab = "4" >ProgressBar(1)</a>
                 </li>
                 <li class="aside__nav-item">
-                    <a href="#" class="aside__nav-link">Link5</a>
+                    <a href="#" class="aside__nav-link" data-tab = "5" >ProgressBar(2)</a>
                 </li>
             </ul>
-            <p>Еще что-то...</p>
+            <p id="text">Еще что-то...</p>
         </aside>
         <article class="article">
-            <p class="article__text">Здесь что-то будет...</p>
-            <!-- <div class="article__table-container"> -->
-            <div class="article__form-table">
-                <label for="inputRow">Row</label>
-                <input type="text" id="inputRow" class="article__input">
-                <label for="inputColumn">Column</label>
-                <input type="text" id="inputColumn" class="article__input">
-                <button type="button" class="article__button">Create table</button>
+            <p class="article__text content" style="display:block">Здесь что-то будет...</p>
+            <div class="article__table-container content">
+                <div class="article__form-table ">
+                    <label for="inputRow">Row</label>
+                    <input type="text" id="inputRow" class="article__input">
+                    <label for="inputColumn">Column</label>
+                    <input type="text" id="inputColumn" class="article__input">
+                    <button type="button" class="article__button">Create table</button>
+                </div>
+                <div class="article__table-wrap"></div>
             </div>
-            <div class="article__table-wrap"></div>
-            <!-- </div> -->
             
-            <div class="article__slider-wrap">
-            <div class="article__slider">
-                <img src="images/slider/Baikal1.jpg" class="article__slider-img" alt="Photo-Baikal">
-                <img src="images/slider/Baikal2.jpg" class="article__slider-img" alt="Photo-Baikal">
-                <img src="images/slider/Baikal3.jpg" class="article__slider-img" alt="Photo-Baikal">
-                <img src="images/slider/Baikal4.jpg" class="article__slider-img" alt="Photo-Baikal">
-                <img src="images/slider/Baikal1.jpg" class="article__slider-img" id="firstImg" alt="Photo-Baikal">
+            <div class="article__slider-wrap content">
+                <div class="article__slider">
+                    <img src="images/slider/Baikal1.jpg" class="article__slider-img" alt="Photo-Baikal">
+                    <img src="images/slider/Baikal2.jpg" class="article__slider-img" alt="Photo-Baikal">
+                    <img src="images/slider/Baikal3.jpg" class="article__slider-img" alt="Photo-Baikal">
+                    <img src="images/slider/Baikal4.jpg" class="article__slider-img" alt="Photo-Baikal">
+                    <img src="images/slider/Baikal1.jpg" class="article__slider-img" id="firstImg" alt="Photo-Baikal">
+                </div>
             </div>
+            <div class="content"></div>
+            <div class="article__progress-wrap content">
+                <div class="article__progress">
+                    <div class="article__progress-line"></div>
+                </div>
+                <div class="article__container-main">
+                    <div class="article__container">    
+                        <h3 class="article__container-caption">Апельсины</h3>
+                        <img class="article__container-img" src="images/forPromises/orange.jpg" alt="" >
+                        <p class="article__container-text">Сочные крупные апельсины выросли под жаркими солнечными лучами и наполнились особой спелостью. <br>
+                            Ярко-оранжевые плоды без косточек обладают великолепным кисло-сладким вкусом и искрящимся ароматом. 
+                            Апельсины богаты витамином С - всего в одном фрукте содержится 65% его суточной нормы. 
+                            Эти жизнерадостные цитрусы способны активизировать работу всего организма, помочь в борьбе с авитаминозом и усталостью.
+                        </p>
+                    </div>
+                    <div class="article__container">    
+                        <h3 class="article__container-caption">Яблоки</h3>
+                        <img class="article__container-img" src="images/forPromises/apple.jpg" alt="" >
+                        <p class="article__container-text">Сочные крупные апельсины выросли под жаркими солнечными лучами и наполнились особой спелостью. <br>
+                            Ярко-оранжевые плоды без косточек обладают великолепным кисло-сладким вкусом и искрящимся ароматом. 
+                            Апельсины богаты витамином С - всего в одном фрукте содержится 65% его суточной нормы. 
+                            Эти жизнерадостные цитрусы способны активизировать работу всего организма, помочь в борьбе с авитаминозом и усталостью.
+                        </p>
+                    </div>
+                    <div class="article__container">    
+                        <h3 class="article__container-caption">Виноград</h3>
+                        <img class="article__container-img" src="images/forPromises/grapes.jpg" alt="" >
+                        <p class="article__container-text">Сочные крупные апельсины выросли под жаркими солнечными лучами и наполнились особой спелостью. <br>
+                            Ярко-оранжевые плоды без косточек обладают великолепным кисло-сладким вкусом и искрящимся ароматом. 
+                            Апельсины богаты витамином С - всего в одном фрукте содержится 65% его суточной нормы. 
+                            Эти жизнерадостные цитрусы способны активизировать работу всего организма, помочь в борьбе с авитаминозом и усталостью.
+                        </p>
+                    </div>    
+                </div>
             </div>
         </article>
     </div>
@@ -71,9 +106,12 @@
         <!-- <p>Временный параграф:)</p> -->
     </footer>
 </body>
+<script src="script/tabs.js"></script>
 <script src="script/table.js"></script>
 <script src="script/clock.js"></script>
 <script src="script/resize.js"></script>
 <script src="script/timer.js"></script>
 <script src="script/slider.js"></script>
+<script src="script/progressBar.js"></script>
+<!-- <script src="script/instanceSlider.js"></script> -->
 </html>

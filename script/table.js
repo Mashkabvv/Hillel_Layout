@@ -1,6 +1,6 @@
 // window.onload = function(){
 
-var linkTable = document.querySelector(`.aside__nav-table`);
+var linkTable = document.querySelector(`#table`);
 var articleText = document.querySelector(`.article__text`);
 var formTable = document.querySelector(`.article__form-table`);
 var btn = document.querySelector(`.article__button`);
@@ -8,15 +8,16 @@ var inputRow = document.querySelector(`#inputRow`);
 var inputColumn = document.querySelector(`#inputColumn`);
 var parentTable = document.querySelector(`.article__table-wrap`);
 
-linkTable.addEventListener(`click`, showFormTable);
+// linkTable.addEventListener(`click`, showFormTable);
 btn.addEventListener(`click`, createTable);
 
-function showFormTable() {
-    formTable.style.display = `block`;
-    parentTable.style.display = `block`;
-    articleText.style.display = `none`;
-    sliderWrap.style.display = `none`;
-}
+// function showFormTable() {
+//     // formTable.style.display = `block`;
+//     // parentTable.style.display = `block`;
+//     // articleText.style.display = `none`;
+//     // sliderWrap.style.display = `none`;
+
+// }
 
 function createTable() {
     parentTable.innerHTML = ``;
