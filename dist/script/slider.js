@@ -6,9 +6,10 @@ function addSlider() {
     var images = document.querySelectorAll(`.article__slider-img`);
     var asideText = document.querySelector(`#text`);
 
-    asideText.addEventListener(`click`, showSlider);
-
+    linkSlider.addEventListener(`click`, showSlider);
+    
     function showSlider() {
+        
         // formTable.style.display = `none`;
         // parentTable.style.display = `none`;
         // articleText.style.display = `none`;
@@ -19,7 +20,7 @@ function addSlider() {
         slider.style.transform = `translateX(` + (-widthImage * k) + `px)`;  
         
         function Slider() {
-            slider.style.transition = `transform 0.5s`;
+            slider.style.transition = `transform 1s`;
             k++;
             slider.style.transform = `translateX(` + (-widthImage * k) + `px)`;
             

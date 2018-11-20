@@ -93,7 +93,12 @@
     &__progress-line {
         height: 100%;
         background: #53df92;
-        
+        // width: 100%;
+        // transition: width 5s;
+
+        // &:hover {
+        //     width: 0;
+        // }
     }
 
     &__container::after {
@@ -115,6 +120,7 @@
         height: 100px;
         margin-right: 10px;
         border: 1px solid #c0c5c2;
+        // display: block;
     }
 
 }
@@ -123,4 +129,5 @@
     display: none;
     // z-index: -5;
 }
+
 

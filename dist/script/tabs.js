@@ -9,7 +9,7 @@ function changeTabs() {
             let linkAttribute = event.target.getAttribute(`data-tab`);
             let content = document.querySelectorAll(`.content`);
             
-            for (l = 0; l < content.length; l++) {
+            for (var l = 0; l < content.length; l++) {
                 (linkAttribute == l)
                 ? content[l].style.display = `block`
                 : content[l].style.display = `none`
