@@ -1,31 +1,28 @@
 function showProgressBar() {
     let progressLine = document.querySelector(`.article__progress-line`);
     let progress = document.querySelector(`.article__progress`);
-    // let k = 0;
-    
-    // progressLine.style.transition = `transform 5s`;
-    // function moveProgress() {
-    //     progressLine.style.transform = `translateX(` + (-100) + `%)`;
-    // }
-    // moveProgress();
-
-
-    start = 100;
-    progressLine.style.width = start + `%`;
+    let btnFirst = document.querySelector(`.article__progress-btn1`);
+   
+    // start = 100;
+    // progressLine.style.width = start + `%`;
    
     
-    timerId = setInterval(moveProgress, 50);
+    // timerId = setInterval(moveProgress, 50);
 
+    // function moveProgress() {
+    //     progressLine.style.transition = `width 3s`;
+    //     if (start < 0) {
+    //         clearInterval(timerId);
+    //     } else {
+    //         start--;
+    //         progressLine.style.width = start + `%`;
+    //     }
+    // }
+    btnFirst.addEventListener(`click`, moveProgress);
+    
     function moveProgress() {
-        progressLine.style.transition = `width 3s`;
-        if (start < 0) {
-            clearInterval(timerId);
-        } else {
-            start--;
-            progressLine.style.width = start + `%`;
-        }
-    }
-
+        progressLine.style.width = 0 + `%`;
+           
     function hideContent() {
         return new Promise((resolve) => {
             //По окончанию анимации вызовется resolve()
@@ -59,6 +56,7 @@ function showProgressBar() {
                 caption[i].style.transform = `scale(0,0)`;
             }
         });
+    }
         
 }
 

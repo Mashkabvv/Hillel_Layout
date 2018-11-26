@@ -18,42 +18,23 @@
         display: none;
     }
 
-    // &__checkbox {
-    //     display: none;
-    // }
-
     &__logo {
         color: #FEE450;
         width: 50%;
         padding-left: 70px;
         box-sizing: border-box;
         font-size: 24px;
-        // flex-grow: 1;
     }
 
-    &__nav {
-        display: flex;
-        justify-content: space-between;
-        flex-grow: 2;
+    &__autocomplete {
+        height: 20px;
+        border-radius: 5px;
+        border: 0;
+        padding: 2px 5px;
+        background: #f5e8f4;
+        &:focus {
+        outline: 0;
     }
-
-    &__nav-item {
-        display: flex;
-        width: auto;
-        text-align: center;
-        flex-grow: 1;
-    }
-
-    &__nav-link {
-        display: block;
-        color: $colorHeader;
-        padding: 0 5px;
-        width: 100%;
-        box-sizing: border-box;
-        &:hover {
-            color: #f3b2f3;
-            background: #a836a3;
-        }
     }
 
     &__date-wrap {

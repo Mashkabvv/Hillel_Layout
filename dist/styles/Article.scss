@@ -12,7 +12,7 @@
         width: 500px;
         margin: 0 auto;
         text-align: center;
-        padding-top: $TopWrapper;
+        padding-top: 30px;
     }
 
     &__input{
@@ -59,8 +59,8 @@
         height: 350px;
         margin: 40px auto;
         position: relative;
-        // z-index: -5;
         overflow: hidden;
+        z-index: -4;
     }
 
     &__slider {
@@ -74,10 +74,9 @@
         height: 100%;
     }
 
-    // &__progress-wrap {
-    //     margin: 20px auto;
-    //     max-width: 800px;
-    // }
+    &__btn {
+        @include btn;
+    }
 
     &__progress {
         margin: 20px auto;
@@ -93,12 +92,14 @@
     &__progress-line {
         height: 100%;
         background: #53df92;
-        // width: 100%;
-        // transition: width 5s;
+        width: 100%;
+        transition: width 5s;
+    }
 
-        // &:hover {
-        //     width: 0;
-        // }
+    &__progress-btn {
+        @include btn;
+        width: 150px;
+        margin: 10px;
     }
 
     &__container::after {

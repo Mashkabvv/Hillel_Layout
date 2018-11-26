@@ -16,16 +16,12 @@
           justify-content: space-between;
 }
 
-.footer p {
-  text-align: center;
-}
-
 #sizeBrowser {
   padding-left: 20px;
   width: 100px;
   height: 65px;
   font-size: 14px;
-  color: #888788;
+  color: #707070;
 }
 
 #timer {
@@ -33,6 +29,6 @@
   height: 65px;
   padding-right: 20px;
   font-size: 14px;
-  color: #888788;
+  color: #707070;
 }
 /*# sourceMappingURL=Footer.css.map */

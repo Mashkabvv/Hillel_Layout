@@ -14,8 +14,6 @@ function changeTabs() {
                 ? content[l].style.display = `block`
                 : content[l].style.display = `none`
             }
-
-
         }
     }
 }

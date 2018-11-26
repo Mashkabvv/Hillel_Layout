@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hillel_Layout</title>
     <link rel="stylesheet" href="styles/style.css">
-    
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&language=en"></script>
 </head>
 <body>
     <header class="header">
         <label class="header__burger" for="checkbox">&#9776;</label>
         <div class="header__logo"><p>:)))))))</p></div>      
-            
+        <input type="text" class="header__autocomplete" placeholder="Type a city">
             <div id="clock" class="header__date-wrap">
                 <span id="hours"></span>:
                 <span id="minutes"></span>:
@@ -53,21 +53,27 @@
                 </div>
                 <div class="article__table-wrap"></div>
             </div>
-            
-            <div class="article__slider-wrap content">
-                <div class="article__slider">
-                    <img src="images/slider/Baikal1.jpg" class="article__slider-img" alt="Photo-Baikal">
-                    <img src="images/slider/Baikal2.jpg" class="article__slider-img" alt="Photo-Baikal">
-                    <img src="images/slider/Baikal3.jpg" class="article__slider-img" alt="Photo-Baikal">
-                    <img src="images/slider/Baikal4.jpg" class="article__slider-img" alt="Photo-Baikal">
-                    <img src="images/slider/Baikal1.jpg" class="article__slider-img" id="firstImg" alt="Photo-Baikal">
+            <div class="article__slider-container content">
+                <div class="article__slider-wrap">
+                    <div class="article__slider">
+                        <!-- <img src="images/slider/Baikal4.jpg" class="article__slider-img" id="lastImg"alt="Photo-Baikal"> -->
+                        <img src="images/slider/Baikal1.jpg" class="article__slider-img" alt="Photo-Baikal">
+                        <img src="images/slider/Baikal2.jpg" class="article__slider-img" alt="Photo-Baikal">
+                        <img src="images/slider/Baikal3.jpg" class="article__slider-img" alt="Photo-Baikal">
+                        <img src="images/slider/Baikal4.jpg" class="article__slider-img" alt="Photo-Baikal">
+                        <img src="images/slider/Baikal1.jpg" class="article__slider-img" id="firstImg" alt="Photo-Baikal">
+                    </div>
                 </div>
+                <button type="button" class="article__btn-prev article__btn">Previous</button>
+                <button type="button" class="article__btn-next article__btn">Next</button>
             </div>
             <div class="content"></div>
-            <div class="article__progress-wrap content">
+            <div class="article__progress-wrap content">          
                 <div class="article__progress">
                     <div class="article__progress-line"></div>
                 </div>
+                <button type="button" class="article__progress-btn1 article__progress-btn">First version</button>
+                <button type="button" class="article__progress-btn2 article__progress-btn">Second version</button>
                 <div class="article__container-main">
                     <div class="article__container">    
                         <h3 class="article__container-caption">Апельсины</h3>
@@ -102,8 +108,11 @@
     </div>
     <footer class="footer">
         <div id="sizeBrowser"></div>
-        <div id="timer"></div>
-        <!-- <p>Временный параграф:)</p> -->
+        <div id="timer">
+            <span id="timerHours">00</span>:
+            <span id="timerMinutes">00</span>:
+            <span id="timerSeconds">00</span>
+        </div>
     </footer>
 </body>
 <script src="script/tabs.js"></script>
@@ -113,5 +122,6 @@
 <script src="script/timer.js"></script>
 <script src="script/slider.js"></script>
 <script src="script/progressBar.js"></script>
-<!-- <script src="script/instanceSlider.js"></script> -->
+<script src="script/autocomplete.js"></script>
+
 </html>

@@ -9,10 +9,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-
-    p {
-        text-align: center;
-    }
 }
 
 #sizeBrowser {
@@ -20,7 +16,7 @@
     width: 100px;
     height: 65px;
     font-size: 14px;
-    color: #888788;
+    color: #707070;
 }
 
 #timer {
@@ -28,5 +24,5 @@
     height: 65px;
     padding-right: 20px;
     font-size: 14px;
-    color: #888788;
+    color: #707070;
 }
