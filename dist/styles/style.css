@@ -26,10 +26,20 @@ a {
   width: 100%;
 }
 
-.article__text {
-  font-size: 20px;
+.article__first-img {
   margin: 50px auto;
-  text-align: center;
+  width: 90%;
+}
+
+.article__panorama {
+  width: 100%;
+}
+
+.article__map {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  z-index: -10 !important;
 }
 
 .article__form-table {
@@ -103,6 +113,10 @@ a {
   height: 100%;
 }
 
+.article__slider-btn {
+  text-align: center;
+}
+
 .article__btn {
   width: 100px;
   padding: 5px 20px;
@@ -158,8 +172,62 @@ a {
   border: 1px solid #c0c5c2;
 }
 
+.article__form-container {
+  margin: 20px auto;
+  width: 50%;
+}
+
+.article__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #656665;
+}
+
+.article__form-input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 25px;
+  border: none;
+  border-bottom: 1px solid #656665;
+  outline: 0;
+}
+
+.article__form-input::-webkit-input-placeholder {
+  color: #aeafae;
+}
+
+.article__form-input:-ms-input-placeholder {
+  color: #aeafae;
+}
+
+.article__form-input::-ms-input-placeholder {
+  color: #aeafae;
+}
+
+.article__form-input::placeholder {
+  color: #aeafae;
+}
+
+.article__form-btn {
+  width: 100px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  width: 150px;
+  margin: 10px auto;
+  outline: 0;
+}
+
 .content {
   display: none;
+}
+
+#inputWebUrl {
+  width: 70%;
 }
 
 .footer {

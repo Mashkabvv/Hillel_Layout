@@ -1,11 +1,27 @@
 .article {
     width: 100%;
 
-    &__text {
-        font-size: 20px;
-        margin: 50px auto;
-        text-align: center;
+    // &__text {
+    //     font-size: 20px;
+    //     margin: 50px auto;
+    //     text-align: center;
 
+    // }
+    
+    &__first-img {
+        margin: 50px auto;
+        width: 90%;
+    }
+
+    &__panorama {
+        width: 100%;
+    }
+
+    &__map {
+        width: 80%;
+        height: 500px;
+        margin: 0 auto;
+        z-index: -10 !important;
     }
 
     &__form-table {
@@ -74,6 +90,9 @@
         height: 100%;
     }
 
+    &__slider-btn {
+        text-align: center;
+    }
     &__btn {
         @include btn;
     }
@@ -124,11 +143,50 @@
         // display: block;
     }
 
+    &__form-container {
+        margin: 20px auto;
+        width: 50%;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        color: #656665;
+    }
+
+    &__form-input {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 25px;
+        border: none;
+        border-bottom: 1px solid #656665;
+        outline: 0;
+
+        &::placeholder {
+            color: #aeafae;
+        }
+    }
+
+    &__form-btn {
+        @include btn;
+        width: 150px;
+        margin: 10px auto;
+        outline: 0;
+    }
+
+    // &__chooseSite {
+    //     // display: flex;
+    // }
+
 }
 
 .content {
     display: none;
     // z-index: -5;
+}
+
+#inputWebUrl {
+    width: 70%;
 }
 
 

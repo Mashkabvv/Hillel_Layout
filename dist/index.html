@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hillel_Layout</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&language=en"></script>
+    <script async type="text/javascript" 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr6ih2TSNqtJ6JzF9cXpieyaQ2fiV6QOA&libraries=places&callback=initMap"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&language=en"></script> -->
+    
 </head>
 <body>
     <header class="header">
@@ -36,13 +39,16 @@
                     <a href="#" class="aside__nav-link" data-tab = "4" >ProgressBar(1)</a>
                 </li>
                 <li class="aside__nav-item">
-                    <a href="#" class="aside__nav-link" data-tab = "5" >ProgressBar(2)</a>
+                    <a href="#" class="aside__nav-link" data-tab = "5" >Table of students</a>
                 </li>
             </ul>
             <p id="text">Еще что-то...</p>
         </aside>
         <article class="article">
-            <p class="article__text content" style="display:block">Здесь что-то будет...</p>
+            <div class="article__first-img content" style="display:block">
+                <img src="images/Panorama.jpg" alt="Панорама" class="article__panorama">
+                <div class="article__map"></div>
+            </div>
             <div class="article__table-container content">
                 <div class="article__form-table ">
                     <label for="inputRow">Row</label>
@@ -64,8 +70,10 @@
                         <img src="images/slider/Baikal1.jpg" class="article__slider-img" id="firstImg" alt="Photo-Baikal">
                     </div>
                 </div>
-                <button type="button" class="article__btn-prev article__btn">Previous</button>
-                <button type="button" class="article__btn-next article__btn">Next</button>
+                <div class="article__slider-btn">
+                    <button type="button" class="article__btn-prev article__btn">Previous</button>
+                    <button type="button" class="article__btn-next article__btn">Next</button>
+                </div>
             </div>
             <div class="content"></div>
             <div class="article__progress-wrap content">          
@@ -104,6 +112,24 @@
                     </div>    
                 </div>
             </div>
+            <div class="article__form-container content">
+                <form action="#" class="article__form">
+                    <label for="inputName">Name</label>
+                        <input type="text" id="inputName" class="article__form-input" placeholder="Type your name">
+                    <label for="inputSurname">Surname</label>
+                        <input type="text" id="inputSurname" class="article__form-input" placeholder="Type your surname">
+                    <label for="inputEntry">Year of entry</label>
+                        <input type="text" id="inputEntry" class="article__form-input" placeholder="Type year of entry">
+                    <label for="inputEnding">Year of ending</label>
+                        <input type="text" id="inputEnding" class="article__form-input" placeholder="Type year of ending">
+                    <label for="inputEnding">Favourite web-site</label>
+                    <div class="article__chooseSite">    
+                        <input type="text" id="inputWebUrl" class="article__form-input" placeholder="Type your favourite web-site">
+                        <input type="button" value="Follow the link" id="btnSite" class="article__form-btn">
+                    </div>
+                    <input type="button" value="Save" id="btnSave" class="article__form-btn" disabled>
+                </form>
+            </div>
         </article>
     </div>
     <footer class="footer">
@@ -115,6 +141,7 @@
         </div>
     </footer>
 </body>
+ 
 <script src="script/tabs.js"></script>
 <script src="script/table.js"></script>
 <script src="script/clock.js"></script>
@@ -123,5 +150,10 @@
 <script src="script/slider.js"></script>
 <script src="script/progressBar.js"></script>
 <script src="script/autocomplete.js"></script>
+<script src="script/tableStudents.js"></script>
+
+<!-- <script async defer type="text/javascript" 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgD5jrmV7TZa1AWIKaRTzrjluLSRVph5E&libraries=places&callback=initMap"></script> -->
+
 
 </html>
